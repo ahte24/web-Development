@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300;400&display=swap');
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 800px;
+    text-align: center;
+
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 800px;
+    letter-spacing: 40px;
+
+    width: 400px;
+    height: 50px;;
+    text-overflow: clip;
+    border: 2px solid grey;
+    overflow: scroll;
+
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500px;
+    text-transform: capitalize;
+}

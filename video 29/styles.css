@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300;400&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	height: 100vh;
+	width: 100vw;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	background-color: aliceblue;
+	height: 75vh;
+	width: 23vw;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px rgba(19, 20, 20, 0.456);
+}
+.img-div {
+	display: flex;
+	justify-content: center;
+	margin-top: 1vw;
+}
+.img {
+	height: 35vh;
+	width: 21.5vw;
+	border-radius: 15px;
+}
+.tags-ul {
+	display: flex;
+}
+.tags {
+	margin-left: 1.5vw;
+	margin-top: 1vw;
+	border: 1px solid grey;
+	border-radius: 15px;
+	padding: 6px;
+	font-family: "Poppins", sans-serif;
+	list-style: none;
+}
+.h1 {
+	margin-left: 1.5vw;
+	margin-top: 0.5vw;
+	font-family: "Poppins", sans-serif;
+	font-size: 35px;
+}
+.p-tag {
+	margin-top: 0.5vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	font-family: "Poppins", sans-serif;
+	font-size: 13px;
+	color: grey;
+}
+.button{
+	font-family: 'Poppins', sans-serif;
+	padding: .6vw;
+	border-radius: 15px;
+	border: none;
+	background-color: aquamarine; 
+    margin-top: 10px;
+    color: rgb(1, 81, 54);
+    cursor: pointer;
+}
+.button-div{
+	text-align: center;
+}
+
+.button:hover{
+    background-color: rgba(194, 190, 190, 0.696);
+    color: black;
+}

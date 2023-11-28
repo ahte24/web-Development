@@ -1,0 +1,64 @@
+/* .box:first-child{
+    background-color: aquamarine;
+}
+.box::first-line{
+    background-color: grey;
+    color: white;
+} */
+
+.boxes *{
+    color: black;
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.box:nth-child(odd){
+    background-color: cadetblue;
+    color: white;
+}
+
+p, a, .box, [data-color="primary"]{
+    padding: 20px;
+    box-shadow: 5px 5px 5px black;
+    margin: 5px;
+}
+
+/* .box:last-child{
+    background-color: cornflowerblue;
+} */
+
+.box:nth-last-child(1){
+    background-color: cornflowerblue;
+    box-shadow: 5px 5px 5px rgb(5, 11, 23);
+}
+
+.boxes::before{
+    content: "ahtesham is good boy";
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+.boxes::after{
+    content: "Zaman is also a great guy";
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: aquamarine;
+
+}
+::selection{
+    background-color: black;
+    color: aquamarine;
+}
+
+.box::first-letter{
+    color: peru;
+    font-size: 25px;
+}
+input::placeholder{
+    color: black;
+
+}

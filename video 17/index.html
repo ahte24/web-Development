@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        /*Universal selector*/
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        /*Element selector*/
+        div{
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /*Class selector*/
+        .red{
+            color: black;
+            background-color: darkgrey;
+        }
+        /*ID Selector*/
+        #green{
+            background-color: green;
+        }
+        /*Child selector*/
+        div > p{
+            color: black;
+            background-color: beige;
+        }
+
+        /*Decendant selector*/
+        div p{
+            color: black;
+            background-color: beige;
+        }
+        /*Pseudo selector*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: blueviolet;
+        }
+        a:active{
+            background-color: rebeccapurple;
+        }
+        a:hover{
+            color: darkkhaki;
+            background-color: black;
+        }
+        p:first-child{
+            color: darkkhaki;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>I am first</p>
+        <p>I am second</p>
+    </div>
+    <div id="green">
+        i am a Div.
+    </div>
+    <div class="red">
+        This is another div.
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </article>
+        <a href="https://www.google.com">Go to google</a>
+        <a href="https://www.facebook.com">Go to facebook</a>
+        <a href="https://www.whatsapp.com">Go to whatsapp</a>
+    </div>
+</body>
+</html>
