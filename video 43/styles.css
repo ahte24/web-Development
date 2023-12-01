@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-div{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 2px 10px grey; */
+    /* position: sticky;
+    top: 0; */
+}
+
+.img-tag{
+    width: 180px;
+    height: 58px;
+    margin-right: 595px;
+    cursor: pointer;
+}
+
+.u-list{
+    display: flex;
+}
+
+.list{
+    list-style: none;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.list img{
+    height: 10px;
+}
+
+.lang-img{
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.main{
+    /* height: ; */
+    display: grid;
+    grid-template-areas: "left mid right";
+    grid-template-columns: 1fr 3.2fr 1fr;
+}
+
+.container{
+    height: 150vh;
+    /* background-color: aquamarine; */
+    grid-area: mid;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: .8fr .2fr .2fr 1fr 1fr 1fr .5fr;
+}
+
+.head-line{
+    margin-top: 60px;
+    font-size: 48px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    text-align: center;
+}
+
+.head-line img{
+    margin-left: 10px;
+}
+
+.para{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+.button{
+    margin-top: 30px;
+    padding: 15px 20px 15px 15px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(27, 195, 221);
+    color: white;
+    font-weight: bold;
+}
+
+.h3{
+    justify-self: left;
+    margin-top: 100px;
+    
+}
