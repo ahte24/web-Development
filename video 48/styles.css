@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin-top: 100px;
+    height: 50vh;
+    width: 100vw;
+    background-color: cadetblue;
+    position: relative;
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0px;
+    animation: azX 5s infinite  linear(0 0%, 0.98 119.89%, 1 100%), azY 1s infinite ease-out alternate;
+    /* animation-play-state: paused; */
+
+
+}
+
+@keyframes azY {
+    from{
+        bottom: 100%;
+    }
+    to{
+        bottom: 0%;
+    }
+}
+@keyframes azX {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}

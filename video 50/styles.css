@@ -1,0 +1,12 @@
+.img1 {
+    filter: brightness(70%) contrast(1.5);
+}
+
+.img2 {
+    /* filter: invert(.7); */
+    filter: opacity(0.8);
+}
+
+.img3 {
+    filter: grayscale(20%) sepia(100%) drop-shadow(16px 16px 20px red) invert(1);
+}
