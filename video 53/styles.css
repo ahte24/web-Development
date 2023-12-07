@@ -310,13 +310,8 @@ footer {
     }
 
     footer {
-        max-width: 80vw;
+        max-width: 70vw;
         padding: 30px;
-    }
-
-    .footer-item {
-        align-items: center;
-        justify-content: center ;
     }
 
     .footer {
@@ -332,4 +327,5 @@ footer {
     .btn-footer {
         margin-top: 20px;
     }
+
 }
