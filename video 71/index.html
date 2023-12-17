@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DOM</title>
+	</head>
+	<body>
+		<div class="container hello world Allahu Akbar">
+			<div
+				style="display: flex"
+				data-createdby="Mohammed ahteshamuz zaman"
+				data-conceptBy="Zaman"
+				class="box"
+			>
+				I am a box.
+			</div>
+		</div>
+		<script>
+			//let div = document.createElement("div");
+			//div.innerHTML = "hey this is new div";
+			//div.setAttribute("class", "created");
+			//document.querySelector(".container").replaceWith(div);
+			//document.querySelector(".container").prepend(div);
+			//document.querySelector(".container").before(div);
+			//document.querySelector(".container").after(div);
+			//document.querySelector(".container").append(div);
+
+			let cont = document.querySelector(".container");
+			cont.insertAdjacentHTML(
+				"beforeBegin",
+				"<b>Hello this is insertAdjesent testing</b>"
+			);
+			document.getElementsByClassName("container")[0].classList.add("Allhamdulillah");
+			document.getElementsByClassName("container")[0].classList.remove("world");
+			document.getElementsByClassName("container")[0].classList.toggle("hello");
+			document.getElementsByClassName("container")[0].classList.toggle("Zaman");
+			document.getElementsByClassName("container")[0].classList.toggle("Zaman");
+			document.getElementsByClassName("container")[0].classList.toggle("Zaman");
+			let rem = document.getElementsByClassName("container")[0].className;
+			let rem1 = document.querySelector("b");
+			console.log(rem);
+			//rem.remove();
+			rem1.remove();
+		</script>
+	</body>
+</html>
