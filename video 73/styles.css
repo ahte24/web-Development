@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background-color: black;
+    height: 150px;
+    width: 980px;
+    border-radius: 15px;
+}
+
+.image {
+    background-color: white;
+    display: flex;
+    height: 120px;
+    margin: 15px;
+    width: 220px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.duration {
+    position: absolute;
+    height: 20px;
+    width: 35px;
+    background-color: black;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duration span{
+    color: white;
+    font-size: 11px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image img {
+    position: relative;
+    width: 220px;
+    /* margin: .5px; */
+    border-radius: 10px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 0px;
+    font-size: medium;
+}
+
+.channel {
+    display: flex;
+    gap: 3px;
+}
+
+.channel span {
+    color: white;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}

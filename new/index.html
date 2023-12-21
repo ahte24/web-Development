@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Change Image Example</title>
+	</head>
+	<body>
+		<!-- Image element with an ID for easy access -->
+		<img
+			id="myImage"
+			src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg"
+			alt="Current Image"
+		/>
+
+		<!-- Button to change the image -->
+		<button onclick="changeImage()">Change Image</button>
+
+		<script>
+			// Function to change the image
+			function changeImage() {
+				// Get the image element by ID
+				var imageElement = document.getElementById("myImage");
+
+				// Set a new source URL for the image
+				imageElement.src = "https://i.ytimg.com/vi/kJEsTjH5mVg/hqdefault.jpg";
+			}
+		</script>
+	</body>
+</html>
