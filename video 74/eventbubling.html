@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event Bubbling</title>
+		<style>
+			.container {
+				border: 2px solid black;
+				margin: 20px;
+				padding: 20px;
+				background-color: aquamarine;
+				border-radius: 12px;
+			}
+			.container-child {
+				border: 2px solid black;
+				margin: 20px;
+				padding: 20px;
+				background-color: cadetblue;
+				border-radius: 12px;
+			}
+			.child {
+				border: 2px solid black;
+				margin: 20px;
+				padding: 20px;
+				background-color: beige;
+				border-radius: 12px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-child">
+				<div class="child">Hello There!</div>
+			</div>
+		</div>
+		<script>
+			let child = document.querySelector(".child");
+			let containerChild = document.querySelector(".container-child");
+			let container = document.querySelector(".container");
+			child.addEventListener("click", (e) => {
+				e.stopPropagation();
+				alert("Child was clicked.");
+			});
+			containerChild.addEventListener("click", (e) => {
+				e.stopPropagation();
+				alert("container-child was clicked.");
+			});
+			container.addEventListener("click", (e) => {
+				e.stopPropagation();
+				alert("container was clicked.");
+			});
+		</script>
+	</body>
+</html>
