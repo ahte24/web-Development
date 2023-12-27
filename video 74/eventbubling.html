@@ -11,6 +11,8 @@
 				padding: 20px;
 				background-color: aquamarine;
 				border-radius: 12px;
+				width: 500px;
+				height: 500px;
 			}
 			.container-child {
 				border: 2px solid black;
@@ -18,6 +20,8 @@
 				padding: 20px;
 				background-color: cadetblue;
 				border-radius: 12px;
+				width: 500px;
+				height: 500px;
 			}
 			.child {
 				border: 2px solid black;
@@ -26,6 +30,8 @@
 				background-color: beige;
 				border-radius: 12px;
 				cursor: pointer;
+				width: 500px;
+				height: 500px;
 			}
 		</style>
 	</head>
@@ -51,6 +57,31 @@
 				e.stopPropagation();
 				alert("container was clicked.");
 			});
+			function getRandomColor() {
+				let v1 = Math.ceil(0 + Math.random() * 255);
+				let v2 = Math.ceil(0 + Math.random() * 255);
+				let v3 = Math.ceil(0 + Math.random() * 255);
+				return `rgb(${v1}, ${v2}, ${v3})`;
+			}
+			let a = setInterval(() => {
+				container.style.background = getRandomColor();
+			}, 100);
+			//console.log(a);
+			clearInterval(a);
+			//let b = setInterval(() => {
+			//	containerChild.style.background = getRandomColor();
+			//}, 1000); -->
+			let b = setTimeout(() => {
+				containerChild.style.background = getRandomColor();
+			}, 100);
+			clearTimeout(b)
+			//console.log(b);
+			//clearInterval(b);
+			let c = setInterval(() => {
+				child.style.background = getRandomColor();
+			}, 100);
+			//console.log(c);
+			clearInterval(c);
 		</script>
 	</body>
 </html>
