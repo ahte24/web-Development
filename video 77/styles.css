@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.card {
+    margin: 1px;
+    display: flex;
+    background-color: black;
+    height: 130px;
+    width: 900px;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.duration {
+    position: absolute;
+    padding: 2px 3px;
+    height: 20px;
+    width: 35px;
+    background-color: black;
+    bottom: 10px;
+    right: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duration span {
+    color: white;
+    font-size: 11px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image img {
+    width: 220px;
+    border-radius: 10px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.content h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+.channel {
+    display: flex;
+    gap: 3px;
+}
+
+.channel span {
+    color: white;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: 400;
+}
