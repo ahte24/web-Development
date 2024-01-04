@@ -33,9 +33,7 @@
 
 .duration {
     position: absolute;
-    padding: 2px 3px;
-    height: 20px;
-    width: 35px;
+    padding: 3px 5px;
     background-color: black;
     bottom: 10px;
     right: 5px;
@@ -43,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: .8;
 }
 
 .duration span {
