@@ -26,11 +26,11 @@ async function main() {
 	}, 500);
 
 	let text = [
-		">>> Initialized Hacking...",
-		">>> Reading all files...",
-		">>> Password files Detected...",
-		">>> Sending all Password and personal files to server...",
-		">>> Cleaning up...",
+		"Initialized Hacking...",
+		"Reading all files...",
+		"Password files Detected...",
+		"Sending all Password and personal files to server...",
+		"Cleaning up...",
 	];
 
 	for (const item of text) {
