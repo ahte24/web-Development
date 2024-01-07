@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Poppins:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #898989;
+    border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +30,9 @@ body {
     color: white;
 }
 
+.container {
+    padding: 2px;
+}
 
 .left {
     width: 20vw;
@@ -22,12 +41,16 @@ body {
 
 .right {
     width: 80vw;
-    /* height: 90vh; */
+    /* height: 617px; */
+    height: 88.2vh;
+    overflow-y: auto;
 }
 
-/* .home {
-    padding: 20px;
-} */
+.home {
+    height: 15vh;
+    box-sizing: border-box;
+
+}
 
 .home ul li {
     gap: 15px;
@@ -47,8 +70,9 @@ body {
 }
 
 .library {
-    height: 70vh;
     position: relative;
+    height: 72.2vh;
+    box-sizing: border-box;
 }
 
 .heading {
@@ -70,7 +94,7 @@ body {
     position: absolute;
     bottom: 15px;
     left: 5px;
-    /* right: 5px; */
+    padding: 15px 0;
 }
 
 .footer a {
@@ -79,19 +103,22 @@ body {
 }
 
 .header {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #101010; */
     background-color: #101010;
     padding: 0 10px 0 10px;
-    box-shadow: 5px 1px 80px  #1e1e1e;
+    box-shadow: 5px 1px 80px #1e1e1e;
+    position: sticky;
+
 }
 
 .header>* {
     padding: 8px;
 }
-.header *{
+
+.header * {
     padding: 8px;
 }
 
@@ -132,13 +159,16 @@ body {
     width: 15px;
 }
 
-.buttons{
+.buttons {
     display: flex;
-    gap: 30px;
 }
 
-.login{
-    padding: 13px 32px;
+.buttons>* {
+    margin: 0 12px;
+}
+
+.login {
+    padding: 13px 25px;
     border-radius: 30px;
     font-size: 15px;
     font-weight: bold;
@@ -146,7 +176,11 @@ body {
     cursor: pointer;
 }
 
-.signup{
+.login:hover {
+    font-weight: bolder;
+}
+
+.signup {
     border-radius: 30px;
     font-size: 15px;
     font-weight: bold;
@@ -156,10 +190,140 @@ body {
     cursor: pointer;
 }
 
-.spotifyPlaylists{
+.signup:hover {
+    font-size: 16px;
+    color: white;
+}
+
+.spotifyPlaylists {
     padding: 10px 20px;
 }
 
-.spotifyPlaylists h1{
-    font-size: 25px;
+.spotifyPlaylists h1 {
+    font-size: 22px;
+    padding: 20px 11px;
+}
+
+.cardContainer {
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 11px;
+
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 240px;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #252525;
+}
+
+.play {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1fdf64;
+    right: 20px;
+    bottom: 95px;
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+
+.play:hover {
+    opacity: 1;
+    bottom: 108px;
+}
+
+.play img {
+    height: 20px;
+}
+
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.card h2 {
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+.card p {
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+.playbar {
+    height: 6.5vh;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 3.5px 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.songButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.playbarSvgs {
+    height: 20px;
+    cursor: pointer;
+}
+
+.play-button img {
+    height: 35px;
+}
+
+
+.songinfo {
+    width:270px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.thumbnail {
+    width: 55px;
+    border-radius: 7px;
+    margin-right: 15px;
+}
+
+.songinfo * {
+    padding: 2px;
+}
+
+
+.songinfo p {
+    color: grey;
+}
+
+.like {
+    filter: invert();
+    width: 20px;
+    padding: 0px 26px;
+}
+
+.functions{
+    width:270px;
+
 }
