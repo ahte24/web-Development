@@ -3,6 +3,10 @@
     margin: 3px;
 }
 
+.invert{
+    filter: invert();
+}
+
 .flex {
     display: flex;
 }

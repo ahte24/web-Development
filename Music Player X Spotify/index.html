@@ -9,10 +9,11 @@
 	</head>
 	<body>
 		<div class="container flex bg-black">
-			<div class="left">
-				<div class="home rounded bg-grey m-1 p-1">
+			<div class="left m-1">
+				<div class="home rounded bg-grey p-1">
 					<div class="logo">
 						<img src="imgs/logo.svg" alt="logo" />
+						<img src="imgs/close.svg" alt="" class="close" />
 					</div>
 					<ul>
 						<li class="flex li-home">
@@ -23,10 +24,13 @@
 						</li>
 					</ul>
 				</div>
-				<div class="library rounded bg-grey m-1 p-1">
+				<div class="library rounded bg-grey">
 					<div class="heading flex align-item">
 						<img src="imgs/library.svg" alt="library" />
 						<h2>Your Library</h2>
+					</div>
+					<div class="songList">
+						<ul></ul>
 					</div>
 					<div class="footer">
 						<div>
@@ -64,7 +68,8 @@
 			</div>
 			<div class="right m-1 rounded bg-grey">
 				<div class="header">
-					<div class="nav" style="display: flex">
+					<div class="nav">
+						<img class="hamburger" src="imgs/hamburger.svg" alt="" />
 						<div class="left-arrow">
 							<img class="width-height" src="imgs/left.svg" alt="left-arrow" />
 						</div>
@@ -88,10 +93,71 @@
 							<div class="play">
 								<img src="imgs/play.svg" alt="" />
 							</div>
-							<img
-								src="https://i.scdn.co/image/ab67616d0000b273b2bdd47f7c1f2edcd018b870"
-								alt=""
-							/>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
+							<h2>Main Nahi Hoon</h2>
+							<p>Ali Zafar</p>
+						</div>
+						<div class="card">
+							<div class="play">
+								<img src="imgs/play.svg" alt="" />
+							</div>
+							<img src="imgs/musics.svg" alt="" />
 							<h2>Main Nahi Hoon</h2>
 							<p>Ali Zafar</p>
 						</div>
@@ -100,31 +166,59 @@
 			</div>
 		</div>
 		<div class="playbar">
-			<div class="songinfo">
-				<img
-					class="thumbnail"
-					src="https://i.scdn.co/image/ab67616d0000b273b2bdd47f7c1f2edcd018b870"
-					alt="thumbnail"
-				/>
+			<div class="songinfo songinfo1">
+				<img class="thumbnail" src="imgs/musics.svg" alt="thumbnail" />
 				<div class="content">
-					<h3>Main Nahi Hoon</h3>
-					<p>Ali Zafar</p>
+					<h3>--------</h3>
+					<p>------</p>
 				</div>
-				<img class="like" src="imgs/heart.png" alt="hello world">
 			</div>
 			<div class="mid">
 				<div class="songButtons">
-					<img class="playbarSvgs" src="imgs/shuffel.svg" alt="" />
-					<img class="playbarSvgs" src="imgs/prevsong.svg" alt="" />
-					<div class="play-button">
-						<img class="playbarSvgs" src="imgs/playsong.svg" alt="" />
+					<div class="songinfo songinfo2">
+						<img class="thumbnail" src="imgs/musics.svg" alt="thumbnail" />
+						<div class="content">
+							<h3>--------</h3>
+							<p>------</p>
+						</div>
 					</div>
-					<img class="playbarSvgs" src="imgs/nextsong.svg" alt="" />
-					<img class="playbarSvgs" src="imgs/replay.svg" alt="" />
+					<div class="prev-play-nex">
+						<img class="playbarSvgs shuffel" src="imgs/shuffel.svg" alt="" />
+						<img
+							id="previous"
+							class="playbarSvgs"
+							src="imgs/prevsong.svg"
+							alt=""
+						/>
+						<div class="play-button">
+							<img
+								id="play"
+								class="playbarSvgs"
+								src="imgs/play-btn.svg"
+								alt=""
+							/>
+						</div>
+						<img id="next" class="playbarSvgs" src="imgs/nextsong.svg" alt="" />
+						<img class="playbarSvgs replay" src="imgs/replay.svg" alt="" />
+					</div>
 				</div>
-				<div class="songTime">songTime</div>
+				<div class="songTime">
+					<span class="time current-time">00:00</span>
+					<div class="seekbar">
+						<div class="bar"></div>
+						<div class="circle"></div>
+					</div>
+					<span class="time duration">00:00</span>
+				</div>
 			</div>
-			<div class="functions">hello world</div>
+			<div class="functions">
+				<img class="functions-svgs" src="imgs/playing-view.svg" alt="" />
+				<img class="functions-svgs" src="imgs/queue.svg" alt="" />
+				<img class="functions-svgs" src="imgs/connect.svg" alt="" />
+				<img class="functions-svgs" src="imgs/volume.svg" alt="" />
+				<div class="volume-seekbar"></div>
+				<img class="functions-svgs" src="imgs/mini-player.svg" alt="" />
+			</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
