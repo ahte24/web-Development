@@ -1,5 +1,3 @@
-console.log("Lets work with js");
-
 // Create a new audio object
 let currentSong = new Audio();
 
@@ -177,6 +175,8 @@ async function main() {
 	document.querySelector(".hamburger").addEventListener("click", () => {
 		document.querySelector(".left").style.left = "1px";
 	});
+
+	// addEventListener to close the hamburger
 
 	document.querySelector(".close").addEventListener("click", ()=>{
 		document.querySelector(".left").style.left = "-600px"
