@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HarmonyHubb - Web Player: Music for everyone</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" href="utility.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/utility.css" />
 	</head>
 	<body>
 		<div class="container flex bg-black">
@@ -66,7 +66,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right m-1 rounded bg-grey">
+			<div class="right rounded bg-grey">
 				<div class="header">
 					<div class="nav">
 						<img class="hamburger" src="imgs/hamburger.svg" alt="" />
@@ -87,80 +87,9 @@
 					</div>
 				</div>
 				<div class="spotifyPlaylists">
-					<h1>Spotify Playlist</h1>
+					<h1>HarmonyHubb Playlist</h1>
 					<div class="cardContainer flex">
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
-						<div class="card">
-							<div class="play">
-								<img src="imgs/play.svg" alt="" />
-							</div>
-							<img src="imgs/musics.svg" alt="" />
-							<h2>Main Nahi Hoon</h2>
-							<p>Ali Zafar</p>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -203,23 +132,28 @@
 					</div>
 				</div>
 				<div class="songTime">
-					<span class="time current-time">00:00</span>
+					<span class="time current-time">--:--</span>
 					<div class="seekbar">
-						<div class="bar"></div>
-						<div class="circle"></div>
+						<div class="bar">
+							<div class="circle"></div>
+						</div>
 					</div>
-					<span class="time duration">00:00</span>
+					<span class="time duration">--:--</span>
 				</div>
 			</div>
 			<div class="functions">
 				<img class="functions-svgs" src="imgs/playing-view.svg" alt="" />
 				<img class="functions-svgs" src="imgs/queue.svg" alt="" />
 				<img class="functions-svgs" src="imgs/connect.svg" alt="" />
-				<img class="functions-svgs" src="imgs/volume.svg" alt="" />
-				<div class="volume-seekbar"></div>
+				<img class="functions-svgs volume" src="imgs/volume.svg" alt="" />
+				<div class="volume-seekbar">
+					<div class="bar volume-bar">
+						<div class="circle volume-circle"></div>
+					</div>
+				</div>
 				<img class="functions-svgs" src="imgs/mini-player.svg" alt="" />
 			</div>
 		</div>
-		<script src="script.js"></script>
+		<script src="/js/script.js"></script>
 	</body>
 </html>
