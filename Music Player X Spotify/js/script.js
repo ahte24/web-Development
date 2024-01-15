@@ -25,7 +25,9 @@ function secondsToMinutes(seconds) {
 async function getSongs(folder) {
 	currFolder = folder;
 	// Send a GET request to the server
-	let a = await fetch(`http://192.168.1.6:5000/${folder}/`);
+	let a = await fetch(
+		`http://192.168.1.6:5000/Music%20Player%20X%20Spotify/${folder}/`
+	);
 	// Get the response as text
 	let response = await a.text();
 	// Create a div element and set its innerHTML to the response
@@ -91,7 +93,9 @@ async function getSongs(folder) {
 // Define a function that plays a given track
 const playMusic = (track, pause = false) => {
 	// Set the source of the audio object to the track
-	currentSong.src = `http://192.168.1.6:5000/${currFolder}/` + track;
+	currentSong.src =
+		`http://192.168.1.6:5000/Music%20Player%20X%20Spotify/${currFolder}/` +
+		track;
 	// Check if the pause parameter is false
 	if (pause == false) {
 		// Play the audio
@@ -107,7 +111,11 @@ const playMusic = (track, pause = false) => {
 	alt="thumbnail"
 	/>
 	<div class="content">
-	<h3>${decodeURI(currentSong.src).split(`http://192.168.1.6:5000/${currFolder}/`)[1]}</h3>
+	<h3>${
+		decodeURI(currentSong.src).split(
+			`/${currFolder}/`
+		)[1]
+	}</h3>
 	<p>Allah ka banda</p>
 	</div>
 	`;
@@ -126,7 +134,9 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-	let a = await fetch(`/musics/`);
+	let a = await fetch(
+		`http://192.168.1.6:5000/Music%20Player%20X%20Spotify/musics/`
+	);
 	let response = await a.text();
 	let div = document.createElement("div");
 	div.innerHTML = response;
@@ -139,7 +149,7 @@ async function displayAlbums() {
 		if (e.href.includes("/musics/") && !e.href.includes(".htaccess")) {
 			let folder = e.href.split("/").slice(-2)[0];
 			// Get the meta data of the folder
-			let a = await fetch(`/musics/${folder}/info.json`);
+			let a = await fetch(`http://192.168.1.6:5000/Music%20Player%20X%20Spotify/musics/${folder}/info.json`);
 			let response = await a.json();
 			cardContainer.innerHTML =
 				cardContainer.innerHTML +
@@ -147,7 +157,7 @@ async function displayAlbums() {
 			<div class="play">
 				<img src="imgs/play.svg" alt="" />
 			</div>
-			<img src="/musics/${folder}/cover.jpg" alt="" />
+			<img src="http://192.168.1.6:5000/Music%20Player%20X%20Spotify/musics/${folder}/cover.jpg" alt="" />
 			<h2>${response.title}</h2>
 			<p>${response.description}</p>
 		</div>`;
