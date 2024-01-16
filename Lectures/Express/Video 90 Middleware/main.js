@@ -23,6 +23,7 @@ app.use((req, res, next) => {
 	// res.send("hello this is middleware one..")
 	next();
 });
+
 app.use((req, res, next) => {
 	req.zaman = "Hello i am zaman bhai...";
 	console.log("Middlewere two.");
