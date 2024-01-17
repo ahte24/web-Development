@@ -1,21 +1,21 @@
 const fs = require("fs");
 const path = require("path");
 
-const sourceDirectory = "K:\\web dev\\js"; // Replace with your source directory path
+const sourceDirectory = "C:\\Users\\ahtes\\Downloads";
 
 function organizeFiles() {
-	// Read the contents of the source directory
 	fs.readdir(sourceDirectory, (error, files) => {
 		if (error) {
 			console.log("Getting error finding the directory: ", error);
 		}
 		files.forEach((file) => {
 			const sourceFilePath = path.join(sourceDirectory, file);
-			fs.stat(sourceFilePath, (error, start) => {
+			fs.stat(sourceFilePath, (error, stats) => {
 				if (error) {
-					console.log("Error getting the file start...");
+					console.log("Error getting the file...");
+					return;
 				}
-				if (start.isFile()) {
+				if (stats.isFile()) {
 					const fileExtension = path.extname(file).toLowerCase();
 					const destinationFolder = path.join(sourceDirectory, fileExtension);
 					if (!fs.existsSync(destinationFolder)) {
@@ -29,7 +29,7 @@ function organizeFiles() {
 								error
 							);
 						} else {
-							console.log(`Moved ${file} to ${destinationFilePath}...`);
+							console.log(`Moved ${file} to ${destinationFilePath}`);
 						}
 					});
 				}

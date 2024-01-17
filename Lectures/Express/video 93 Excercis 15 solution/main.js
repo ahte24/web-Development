@@ -3,7 +3,7 @@ import fsn from "fs";
 import path from "path";
 
 const sourcedirectory =
-	"K:\\sigma web dev\\Lectures\\Express\\video 93 Excercis 15 solution\\files";
+	"C:\\Users\\ahtes\\Downloads";
 
 let files = await fs.readdir(sourcedirectory);
 for (const file of files) {
