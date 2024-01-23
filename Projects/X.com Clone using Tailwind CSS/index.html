@@ -8,12 +8,12 @@
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
 		/>
 		<link rel="stylesheet" href="src/output.css" />
-		<title>X</title>
+		<title>Home / X</title>
 	</head>
 	<body class="bg-black text-white">
 		<div class="flex justify-center">
-			<div class="first flex-col flex w-[280px] p-2">
-				<div class="w-fit px-6 py-1">
+			<div class="first flex-col h-screen sticky top-0 flex w-[280px] p-2">
+				<div class="w-fit px-4 mb-4 py-1">
 					<svg
 						class="m-auto w-8"
 						viewBox="0 0 24 24"
@@ -28,21 +28,21 @@
 						</g>
 					</svg>
 				</div>
-				<ul class="flex flex-col text-lg space-y-1 font-semibold">
+				<ul class="flex flex-col text-xl font-th space-y-2">
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl">home</span>
 						Home
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl"> search </span
 						>Explore
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl">
 							notifications
@@ -50,13 +50,13 @@
 						Notifications
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl"> chat</span>
 						Messages
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 invert">
 							<g>
@@ -76,12 +76,12 @@
 						Grok
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl"> list </span>List
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-7">
 							<g>
@@ -93,7 +93,7 @@
 						Communities
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 invert">
 							<g>
@@ -105,24 +105,48 @@
 						Premium
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl"> person </span
 						>Profile
 					</li>
 					<li
-						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-2 px-6 w-fit"
+						class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
 					>
 						<span class="material-symbols-outlined text-3xl"> more_horiz </span>
 						More
 					</li>
 				</ul>
 			</div>
-			<div class="second w-[650px] border-x border-[#80808048] p-2 h-screen">
-				hello world
+			<div class="second w-[600px] border-x border-[#80808048]">
+				<div
+					class="top backdrop-filter backdrop-blur-md flex h-14 border-b border-[#80808048] sticky top-0"
+				>
+					<div
+						class="for-you cursor-pointer text-sm hover:bg-[#80808048] font-bold flex justify-center items-center w-1/2 relative"
+					>
+						For you
+						<div
+							class="uLine absolute w-12 h-0.5 rounded-full bg-[#1d9bf0] bottom-0"
+						></div>
+					</div>
+					<div
+						class="following cursor-pointer text-sm hover:bg-[#80808048] font-bold flex justify-center items-center w-1/2"
+					>
+						Following
+					</div>
+					<div class="settings w-14 flex justify-center items-center">
+						<span
+							class="material-symbols-outlined hover:bg-[#80808048] rounded-full p-2 cursor-pointer"
+						>
+							settings
+						</span>
+					</div>
+				</div>
+				<div>hello world</div>
 			</div>
-			<div class="third p-2 px-6 w-[410px]">
-				<div class="search">
+			<div class="third px-6 w-[410px] pb-4">
+				<div class="py-2 search sticky top-0 bg-black">
 					<input
 						class="bg-[#202327] w-full py-[10px] px-6 rounded-full"
 						type="text"
@@ -131,7 +155,7 @@
 						id=""
 					/>
 				</div>
-				<div class="premium py-2 px-3 mt-4 rounded-xl min-h-36 bg-[#202327]">
+				<div class="premium py-2 px-3 mt-4 rounded-xl min-h-36 bg-[#16181c]">
 					<div class="flex flex-col gap-2">
 						<h1 class="font-bold text-xl">Subscribe to premium</h1>
 						<p class="text-[15px]">
@@ -143,6 +167,152 @@
 						>
 							Subscribe
 						</button>
+					</div>
+				</div>
+				<div class="whats-happening pt-3 mt-4 rounded-xl min-h-40 bg-[#16181c]">
+					<h1 class="px-5 font-extrabold text-xl mb-3">What's heppening</h1>
+					<div
+						class="py-2 px-5 flex flex-col hover:bg-[#21232a] cursor-pointer justify-center gap-1"
+					>
+						<div class="text-sm w-fit text-[grey] cursor-pointer">
+							Trending in India
+						</div>
+						<div class="text-md font-bold w-fit cursor-pointer">
+							#BabriMasjid
+						</div>
+						<div class="text-sm text-[grey] w-fit cursor-pointer">
+							3.4M posts
+						</div>
+					</div>
+					<div
+						class="py-2 flex px-5 flex-col hover:bg-[#21232a] cursor-pointer justify-center gap-1"
+					>
+						<div class="text-sm w-fit text-[grey] cursor-pointer">
+							Trending in India
+						</div>
+						<div class="text-md font-bold w-fit cursor-pointer">#Palestine</div>
+						<div class="text-sm text-[grey] w-fit cursor-pointer">
+							3.4M posts
+						</div>
+					</div>
+					<div
+						class="py-2 flex flex-col px-5 hover:bg-[#21232a] cursor-pointer justify-center gap-1"
+					>
+						<div class="text-sm w-fit text-[grey] cursor-pointer">
+							Trending in India
+						</div>
+						<div class="text-md font-bold w-fit cursor-pointer">
+							#CodeWithHarry
+						</div>
+						<div class="text-sm text-[grey] w-fit cursor-pointer">
+							3.4M posts
+						</div>
+					</div>
+					<div
+						class="py-2 flex flex-col px-5 hover:bg-[#21232a] cursor-pointer justify-center gap-1"
+					>
+						<div class="text-sm w-fit text-[grey] cursor-pointer">
+							Trending in India
+						</div>
+						<div class="text-md font-bold w-fit cursor-pointer">
+							#Sigmabatch
+						</div>
+						<div class="text-sm text-[grey] w-fit cursor-pointer">
+							3.4M posts
+						</div>
+					</div>
+					<div
+						class="flex items-center rounded-b-xl hover:bg-[#21232a] text-[#1b7dbf] h-12 px-5 cursor-pointer"
+					>
+						Show more
+					</div>
+				</div>
+				<div class="who-to-follow pt-3 mt-4 rounded-xl min-h-40 bg-[#16181c]">
+					<h1 class="px-5 font-extrabold text-xl mb-2">Who to follow</h1>
+					<div
+						class="px-3 py-3 items-center justify-center flex gap-3 h-20 hover:bg-[#21232a] cursor-pointer"
+					>
+						<div
+							class="text-sm cursor-pointer w-12 h-12 flex justify-center items-center"
+						>
+							<img class="rounded-full object-cover" src="az.jpg" alt="" />
+						</div>
+						<div class="flex justify-center flex-col w-44">
+							<div class="text-sm font-bold w-fit cursor-pointer">
+								Mohammed Ahteshamuz Zaman
+							</div>
+							<div class="text-sm text-[grey] w-fit cursor-pointer">
+								@ahtesham_24
+							</div>
+						</div>
+						<div class="flex items-center">
+							<button
+								class="py-1 px-4 text-black font-bold bg-white rounded-full"
+							>
+								Follow
+							</button>
+						</div>
+					</div>
+					<div
+						class="px-3 py-3 items-center justify-center flex gap-3 h-20 hover:bg-[#21232a] cursor-pointer"
+					>
+						<div
+							class="text-sm cursor-pointer w-12 h-12 flex justify-center items-center"
+						>
+							<img
+								class="rounded-full object-cover"
+								src="https://media.licdn.com/dms/image/D5603AQHsLlxTDRKyeQ/profile-displayphoto-shrink_100_100/0/1705161768032?e=1711584000&v=beta&t=TY6u8MUXxG4ppGfP6VryhMzAdHSqSFhottlE15EvNOU"
+								alt=""
+							/>
+						</div>
+						<div class="flex justify-center flex-col w-44">
+							<div class="text-sm font-bold w-fit cursor-pointer">
+								Sk Md Arshad Iqbal
+							</div>
+							<div class="text-sm text-[grey] w-fit cursor-pointer">
+								@arshad_2002
+							</div>
+						</div>
+						<div class="flex items-center">
+							<button
+								class="py-1 px-4 text-black font-bold bg-white rounded-full"
+							>
+								Follow
+							</button>
+						</div>
+					</div>
+					<div
+						class="px-3 py-3 items-center justify-center flex gap-3 h-20 hover:bg-[#21232a] cursor-pointer"
+					>
+						<div
+							class="text-sm cursor-pointer w-12 h-12 flex justify-center items-center"
+						>
+							<img
+								class="rounded-full object-cover"
+								src="https://media.licdn.com/dms/image/D4E03AQGBN38HU6tGKA/profile-displayphoto-shrink_800_800/0/1665754870977?e=1711584000&v=beta&t=z8h7MgIyXybhMH1qfFIPSSw-YaVs5LN0-qXtqsFPnXo"
+								alt=""
+							/>
+						</div>
+						<div class="flex justify-center flex-col w-44">
+							<div class="text-sm font-bold w-fit cursor-pointer">
+								Sucharita Mohanty
+							</div>
+							<div class="text-sm text-[grey] w-fit cursor-pointer">
+								@sucharita_06
+							</div>
+						</div>
+						<div class="flex items-center">
+							<button
+								class="py-1 px-4 text-black font-bold bg-white rounded-full"
+							>
+								Follow
+							</button>
+						</div>
+					</div>
+					<div
+						class="flex items-center rounded-b-xl hover:bg-[#21232a] text-[#1b7dbf] h-12 px-5 cursor-pointer"
+					>
+						Show more
 					</div>
 				</div>
 			</div>
