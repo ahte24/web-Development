@@ -10,11 +10,13 @@
 		<link rel="stylesheet" href="src/output.css" />
 		<title>Home / X</title>
 	</head>
-	<body class="bg-black text-white flex justify-center ">
-		<div class="first flex-col h-screen sticky top-0 flex w-[250px] p-2">
-			<div class="w-fit px-4 mb-4 py-1">
+	<body class="bg-black text-white flex justify-center">
+		<div
+			class="first flex-col items-center h-screen xl:items-start sticky top-0 flex w-fit px-2 xl:w-[250px]"
+		>
+			<div class="w-fit px-4 py-1">
 				<svg
-					class="m-auto w-8"
+					class="m-auto w-7"
 					viewBox="0 0 24 24"
 					aria-hidden="true"
 					class="w-8"
@@ -27,97 +29,132 @@
 					</g>
 				</svg>
 			</div>
-			<ul class="flex flex-col text-xl font-th space-y-2">
+			<ul class="flex flex-col xl:items-start items-center text-xl">
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
 					<span class="material-symbols-outlined text-3xl">home</span>
-					Home
+					<div class="hidden xl:block">Home</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
-					<span class="material-symbols-outlined text-3xl"> search </span
-					>Explore
+					<span class="material-symbols-outlined text-3xl"> search </span>
+					<div class="hidden xl:block">Explore</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
 					<span class="material-symbols-outlined text-3xl">
 						notifications
 					</span>
-					Notifications
+					<div class="hidden xl:block">Notifications</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
 					<span class="material-symbols-outlined text-3xl"> chat</span>
-					Messages
+					<div class="hidden xl:block">Messages</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
-					<svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 invert">
-						<g>
-							<g clip-path="url(#0-clip0_2592_269)" clip-rule="evenodd">
-								<path
-									d="M4.2 4.2v15.6h15.6V4.2H4.2zM3 2h18c.552 0 1 .448 1 1v18c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V3c0-.552.448-1 1-1z"
-								></path>
-								<path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path>
+					<div>
+						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 invert">
+							<g>
+								<g clip-path="url(#0-clip0_2592_269)" clip-rule="evenodd">
+									<path
+										d="M4.2 4.2v15.6h15.6V4.2H4.2zM3 2h18c.552 0 1 .448 1 1v18c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V3c0-.552.448-1 1-1z"
+									></path>
+									<path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path>
+								</g>
+								<defs>
+									<clipPath id="0-clip0_2592_269">
+										<rect height="20" rx="1" width="20" x="2" y="2"></rect>
+									</clipPath>
+								</defs>
 							</g>
-							<defs>
-								<clipPath id="0-clip0_2592_269">
-									<rect height="20" rx="1" width="20" x="2" y="2"></rect>
-								</clipPath>
-							</defs>
-						</g>
-					</svg>
-					Grok
+						</svg>
+					</div>
+					<div class="hidden xl:block">Grok</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
-					<span class="material-symbols-outlined text-3xl"> list </span>List
+					<span class="material-symbols-outlined text-3xl"> list </span>
+					<div class="hidden xl:block">List</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
-					<svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-7">
-						<g>
-							<path
-								d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z"
-							></path>
-						</g>
-					</svg>
-					Communities
+					<div>
+						<svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-7">
+							<g>
+								<path
+									d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z"
+								></path>
+							</g>
+						</svg>
+					</div>
+					<div class="hidden xl:block">Communities</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
-					<svg viewBox="0 0 24 24" aria-hidden="true" class="w-7 invert">
-						<g>
-							<path
-								d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-							></path>
-						</g>
-					</svg>
-					Premium
+					<div>
+						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 invert">
+							<g>
+								<path
+									d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+								></path>
+							</g>
+						</svg>
+					</div>
+					<div class="hidden xl:block">Premium</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
-					<span class="material-symbols-outlined text-3xl"> person </span
-					>Profile
+					<span class="material-symbols-outlined text-3xl"> person </span>
+					<div class="hidden xl:block">Profile</div>
 				</li>
 				<li
-					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[10px] px-4 w-fit"
+					class="flex items-center gap-3 cursor-pointer hover:bg-[#181818] rounded-full py-[1vh] h-[55px] px-[15px] w-fit"
 				>
 					<span class="material-symbols-outlined text-3xl"> more_horiz </span>
-					More
+					<div class="hidden xl:block">More</div>
 				</li>
 			</ul>
+			<div class="xl:justify-start mt-4 xl:w-52 w-14 h-14 flex justify-center">
+				<button
+					class="bg-[#1a8cd8] hover:bg-[#136aa4] py-[10px] text-lg w-full xl:px-4 rounded-full font-bold"
+				>
+					Post
+				</button>
+			</div>
+			<div
+				class="flex h-16 rounded-full bottom-2 absolute hover:bg-[#21232a88] items-center py-5"
+			>
+				<div
+					class="text-sm cursor-pointer w-16 h-16 flex items-center justify-center"
+				>
+					<img
+						class="rounded-full w-12 h-12 object-cover"
+						src="az.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="xl:block hidden prof_name_user flex-col gap-2 mr-4">
+					<div class="text-sm font-bold w-fit cursor-pointer">
+						Mohammed Ahtesham
+					</div>
+					<div class="text-sm text-[grey] w-fit cursor-pointer">
+						@ahtesham_24
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="second w-[600px] border-x border-[#2f3336]">
+		<div class="second sm:max-w-[600px] border-x max-w-full border-[#2f3336]">
 			<div
 				class="top backdrop-filter backdrop-blur-md flex h-14 border-b border-[#2f3336] sticky top-0"
 			>
@@ -215,7 +252,7 @@
 			</div>
 			<div>
 				<div
-					class="posts py-2 border-b border-[#2f3336] flex gap-2 cursor-pointer"
+					class="posts py-2 max-w-full hover:bg-[#21232a88] border-b border-[#2f3336] flex gap-2 cursor-pointer"
 				>
 					<div
 						class="text-sm cursor-pointer ml-2 w-16 h-16 flex items-center justify-center"
@@ -230,7 +267,7 @@
 						<div>
 							<div class="prof_name_user flex gap-2 mr-4">
 								<div class="text-sm font-bold w-fit cursor-pointer">
-									Mohammed Ahteshamuz Zaman
+									Ahtesham 
 								</div>
 								<div class="text-sm text-[grey] w-fit cursor-pointer">
 									@ahtesham_24
@@ -244,9 +281,152 @@
 								placeat?
 							</div>
 							<div
-								class="post-img rounded-2xl mt-2 w-[460px] max-h-[550px] bg-black flex justify-center mr-4"
+								class="post-img rounded-2xl mt-2 overflow-hidden max-w-[460px] max-h-[550px] bg-black flex justify-center mr-4"
 							>
-								<img class="object-cover rounded-2xl" src="ahte.jpg" alt="" />
+								<img class="object-cover" src="ahte.jpg" alt="" />
+							</div>
+							<div class="h-10 flex items-center justify-between mt-2 px-2">
+								<div
+									class="Comment flex items-center hover:bg-[#0a171f] rounded-full p-1 min-w-12 justify-center gap-1"
+								>
+									<svg
+										fill="#1d9bf0"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
+									>
+										<g>
+											<path
+												d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
+											></path>
+										</g>
+									</svg>
+									<div class="text-[11px] text-[gray] hover:text-[#1d9bf0]">
+										214
+									</div>
+								</div>
+								<div
+									class="retweet flex items-center hover:bg-[#071a14a3] hover: text-[green] rounded-full p-1 min-w-12 justify-center gap-1"
+								>
+									<svg
+										fill="#00ba7c"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
+									>
+										<g>
+											<path
+												d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+											></path>
+										</g>
+									</svg>
+									<div class="text-[11px] text-[gray] hover:text-[#00ba7c]">
+										79
+									</div>
+								</div>
+								<div
+									class="like flex items-center hover:bg-[#200914] rounded-full p-1 min-w-12 justify-center gap-1"
+								>
+									<svg
+										fill="#f91880"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
+									>
+										<g>
+											<path
+												d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
+											></path>
+										</g>
+									</svg>
+									<div class="text-[11px] text-[gray] hover:text-[#f91880]">
+										45k
+									</div>
+								</div>
+								<div
+									class="flex items-center hover:bg-[#0a171f] rounded-full p-1 min-w-12 justify-center gap-1"
+								>
+									<svg
+										fill="#1d9bf0"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
+									>
+										<g>
+											<path
+												d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
+											></path>
+										</g>
+									</svg>
+									<div class="text-[11px] text-[gray] hover:text-[#1d9bf0]">
+										71k
+									</div>
+								</div>
+								<div
+									class="flex items-center hover:bg-[#0a171f] rounded-full p-1 min-w-12 justify-center gap-1"
+								>
+									<svg
+										fill="#1d9bf0"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
+									>
+										<g>
+											<path
+												d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"
+											></path>
+										</g>
+									</svg>
+									<svg
+										fill="#1d9bf0"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
+									>
+										<g>
+											<path
+												d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
+											></path>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="posts py-2 border-b hover:bg-[#21232a88] border-[#2f3336] flex gap-2 cursor-pointer"
+				>
+					<div
+						class="text-sm cursor-pointer ml-2 w-16 h-16 flex items-center justify-center"
+					>
+						<img
+							class="rounded-full w-12 h-12 object-cover"
+							src="az.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="flex flex-col w-full pt-2">
+						<div>
+							<div class="prof_name_user flex gap-2 mr-4">
+								<div class="text-sm font-bold w-fit cursor-pointer">
+									Ahtesham
+								</div>
+								<div class="text-sm text-[grey] w-fit cursor-pointer">
+									@ahtesham_24
+								</div>
+							</div>
+							<div class="py-3 text-sm min-h-7 mr-4">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Cupiditate odit id necessitatibus dicta deserunt praesentium,
+								eveniet ab mollitia accusamus debitis assumenda error
+								consequatur adipisci! Velit voluptatem consequatur a dolore
+								placeat?
+							</div>
+							<div
+								class="post-img rounded-2xl overflow-hidden mt-2 max-w-[460px] max-h-[550px] bg-black flex justify-center mr-4"
+							>
+								<img class="object-cover" src="az.jpg" alt="" />
 							</div>
 							<div class="h-10 flex items-center justify-between mt-2 px-2">
 								<div
@@ -303,7 +483,7 @@
 										</g>
 									</svg>
 									<div class="text-[11px] text-[gray] hover:text-[#f91880]">
-										214
+										17k
 									</div>
 								</div>
 								<div
@@ -322,7 +502,7 @@
 										</g>
 									</svg>
 									<div class="text-[11px] text-[gray] hover:text-[#1d9bf0]">
-										214
+										26k
 									</div>
 								</div>
 								<div
@@ -358,14 +538,14 @@
 					</div>
 				</div>
 				<div
-					class="posts py-2 border-b border-[#2f3336] flex gap-2 cursor-pointer"
+					class="posts py-2 border-b hover:bg-[#21232a88] border-[#2f3336] flex gap-2 cursor-pointer"
 				>
 					<div
 						class="text-sm cursor-pointer ml-2 w-16 h-16 flex items-center justify-center"
 					>
 						<img
 							class="rounded-full w-12 h-12 object-cover"
-							src="az.jpg"
+							src="arshu.jpg"
 							alt=""
 						/>
 					</div>
@@ -373,10 +553,10 @@
 						<div>
 							<div class="prof_name_user flex gap-2 mr-4">
 								<div class="text-sm font-bold w-fit cursor-pointer">
-									Mohammed Ahteshamuz Zaman
+									Sk Md Arshad Iqbal
 								</div>
 								<div class="text-sm text-[grey] w-fit cursor-pointer">
-									@ahtesham_24
+									@arshad_2002
 								</div>
 							</div>
 							<div class="py-3 text-sm min-h-7 mr-4">
@@ -387,152 +567,9 @@
 								placeat?
 							</div>
 							<div
-								class="post-img rounded-2xl mt-2 w-[460px] max-h-[550px] bg-black flex justify-center mr-4"
+								class="post-img rounded-2xl mt-2 max-w-[460px] max-h-[550px] bg-black flex justify-center mr-4"
 							>
-								<img class="object-cover rounded-2xl" src="ahte.jpg" alt="" />
-							</div>
-							<div class="h-10 flex items-center justify-between mt-2 px-2">
-								<div
-									class="Comment flex items-center hover:bg-[#0a171f] rounded-full p-1 min-w-12 justify-center gap-1"
-								>
-									<svg
-										fill="#1d9bf0"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
-									>
-										<g>
-											<path
-												d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
-											></path>
-										</g>
-									</svg>
-									<div class="text-[11px] text-[gray] hover:text-[#1d9bf0]">
-										214
-									</div>
-								</div>
-								<div
-									class="retweet flex items-center hover:bg-[#071a14a3] hover: text-[green] rounded-full p-1 min-w-12 justify-center gap-1"
-								>
-									<svg
-										fill="#00ba7c"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
-									>
-										<g>
-											<path
-												d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
-											></path>
-										</g>
-									</svg>
-									<div class="text-[11px] text-[gray] hover:text-[#00ba7c]">
-										214
-									</div>
-								</div>
-								<div
-									class="like flex items-center hover:bg-[#200914] rounded-full p-1 min-w-12 justify-center gap-1"
-								>
-									<svg
-										fill="#f91880"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
-									>
-										<g>
-											<path
-												d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
-											></path>
-										</g>
-									</svg>
-									<div class="text-[11px] text-[gray] hover:text-[#f91880]">
-										214
-									</div>
-								</div>
-								<div
-									class="flex items-center hover:bg-[#0a171f] rounded-full p-1 min-w-12 justify-center gap-1"
-								>
-									<svg
-										fill="#1d9bf0"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
-									>
-										<g>
-											<path
-												d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"
-											></path>
-										</g>
-									</svg>
-									<div class="text-[11px] text-[gray] hover:text-[#1d9bf0]">
-										214
-									</div>
-								</div>
-								<div
-									class="flex items-center hover:bg-[#0a171f] rounded-full p-1 min-w-12 justify-center gap-1"
-								>
-									<svg
-										fill="#1d9bf0"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
-									>
-										<g>
-											<path
-												d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"
-											></path>
-										</g>
-									</svg>
-									<svg
-										fill="#1d9bf0"
-										viewBox="0 0 24 24"
-										aria-hidden="true"
-										class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi"
-									>
-										<g>
-											<path
-												d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
-											></path>
-										</g>
-									</svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div
-					class="posts py-2 border-b border-[#2f3336] flex gap-2 cursor-pointer"
-				>
-					<div
-						class="text-sm cursor-pointer ml-2 w-16 h-16 flex items-center justify-center"
-					>
-						<img
-							class="rounded-full w-12 h-12 object-cover"
-							src="az.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="flex flex-col w-full pt-2">
-						<div>
-							<div class="prof_name_user flex gap-2 mr-4">
-								<div class="text-sm font-bold w-fit cursor-pointer">
-									Mohammed Ahteshamuz Zaman
-								</div>
-								<div class="text-sm text-[grey] w-fit cursor-pointer">
-									@ahtesham_24
-								</div>
-							</div>
-							<div class="py-3 text-sm min-h-7 mr-4">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Cupiditate odit id necessitatibus dicta deserunt praesentium,
-								eveniet ab mollitia accusamus debitis assumenda error
-								consequatur adipisci! Velit voluptatem consequatur a dolore
-								placeat?
-							</div>
-							<div
-								class="post-img rounded-2xl mt-2 w-[460px] max-h-[550px] bg-black flex justify-center mr-4"
-							>
-								<img class="object-cover rounded-2xl" src="ahte.jpg" alt="" />
+								<img class="object-cover" src="arshu.jpg" alt="" />
 							</div>
 							<div class="h-10 flex items-center justify-between mt-2 px-2">
 								<div
@@ -645,7 +682,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="third px-6 w-[390px] pb-4 sticky right-0 h-fit">
+		<div
+			class="third px-6 hidden lg:block lg:w-[390px] pb-4 sticky top-0 h-fit"
+		>
 			<div class="py-2 search sticky top-0 bg-black">
 				<input
 					class="bg-[#202327] w-full py-[10px] px-6 rounded-full"
