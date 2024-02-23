@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: black;
+  padding: 20px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+
+.red {
+  color: aquamarine;
+}
