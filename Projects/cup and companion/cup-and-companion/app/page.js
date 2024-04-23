@@ -15,15 +15,15 @@ export default function Home() {
 					companions. Cup & Companion: Your creative fueling ground.
 				</p>
 				<div className="flex gap-5">
-					<button class="relative inline-flex h-11 w-28 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<button className="relative inline-flex h-11 w-28 overflow-hidden rounded-lg p-[1px]">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							Start Here
 						</span>
 					</button>
-					<button class="relative inline-flex h-11 w-28 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<button className="relative inline-flex h-11 w-28 overflow-hidden rounded-lg p-[1px] ">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							Read More
 						</span>
 					</button>
@@ -32,12 +32,13 @@ export default function Home() {
 			<div className="bg-gray-300 h-[2px] opacity-15"></div>
 			<div className="text-white container mx-auto py-16">
 				<h1 className="text-2xl fontbold text-center mb-10">
-					Your Fans can buy you a chai
+					Fueling the Future: Empowering the Coffee Community through
+					Crowdfunding
 				</h1>
 				<div className="flex gap-5 justify-between ">
-					<div class="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<div className="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							<div className="item space-y-3 flex-col items-center flex w-80">
 								<img
 									className="bg-slate-400 w-36  h-36 rounded-full  text-black object-fill"
@@ -52,9 +53,9 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div class="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<div className="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							<div className="item space-y-3 flex-col items-center flex w-80">
 								<img
 									className="bg-slate-400 w-36  h-36 rounded-full  text-black object-fill"
@@ -71,9 +72,9 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div class="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<div className="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							<div className="item space-y-3 flex-col items-center flex w-80">
 								<img
 									className="bg-slate-400 w-36  h-36 rounded-full  text-black object-fill"
@@ -98,9 +99,9 @@ export default function Home() {
 					Learn more about us
 				</h1>
 				<div className="flex gap-5 justify-between ">
-					<div class="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<div className="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							<div className="item space-y-3 flex-col items-center flex w-80">
 								<img
 									className="bg-slate-400 w-36  h-36 rounded-full  text-black object-fill"
@@ -116,9 +117,9 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div class="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<div className="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							<div className="item space-y-3 flex-col items-center flex w-80">
 								<img
 									className="bg-slate-400 w-36  h-36 rounded-full  text-black object-fill"
@@ -134,9 +135,9 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div class="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
-						<span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-						<div class="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+					<div className="relative h-72 w-96 overflow-hidden rounded-xl border border-slate-800 p-[1px] backdrop-blur-3xl">
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+						<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 							<div className="item space-y-3 flex-col items-center flex w-80">
 								<img
 									className="bg-slate-400 w-36  h-36 rounded-full  text-black object-fill"
