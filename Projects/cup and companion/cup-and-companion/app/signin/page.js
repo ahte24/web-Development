@@ -1,8 +1,14 @@
 "use client";
 import React from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
-const page = () => {
+const Login = () => {
+	const { data: session } = useSession();
+	if (session) {
+		const router = useRouter();
+		router.push("/dashboard");
+	}
 	return (
 		<div className="text-white py14 container mx-auto mt-10">
 			<h1 className="text-center font-bold text-2xl">
@@ -237,4 +243,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Login;
