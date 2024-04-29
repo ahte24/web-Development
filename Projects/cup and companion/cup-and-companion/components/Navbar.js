@@ -44,7 +44,7 @@ const Navbar = () => {
 								src={session.user.image}
 								alt=""
 							/>
-							{session.user.name}
+							{session.user.email}
 							<svg
 								className="w-2.5 h-2.5 ms-3"
 								aria-hidden="true"
@@ -82,7 +82,7 @@ const Navbar = () => {
 								</li>
 								<li>
 									<Link
-										href="#"
+										href={`/${session.user.name}`}
 										className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
 									>
 										Your page
