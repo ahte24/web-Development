@@ -6,9 +6,13 @@ import payment from "@/models/payment";
 
 export const initiate = async (amount, to_username, paymentform) => {
 	await connectDB();
+	let user = await User.findOne({ username: to_username });
+	const secret = user.razorpaySecret;
+	const keyId = user.razorpayId;
+
 	let instance = new Razorpay({
-		key_id: process.env.NEXT_PUBLIC_KEY_ID,
-		key_secret: process.env.KEY_SECRET,
+		key_id: keyId,
+		key_secret: secret,
 	});
 
 	let options = {
@@ -21,7 +25,7 @@ export const initiate = async (amount, to_username, paymentform) => {
 
 	await payment.create({
 		oid: x.id,
-		amount: amount,
+		amount: amount / 100,
 		to_user: to_username,
 		name: paymentform.name,
 		message: paymentform.message,
@@ -40,8 +44,9 @@ export const fetchpayments = async (username) => {
 	await connectDB();
 	// Retrieve all payments sorted by decreasing order of amount and flatten object IDs
 	const payments = await payment
-		.find({ to_user: username })
+		.find({ to_user: username, done: true })
 		.sort({ amount: -1 })
+		.limit(10)
 		.lean(); // Use lean() to convert MongoDB documents to plain JavaScript objects
 
 	// Manually convert _id to a simple value for each payment
@@ -59,9 +64,16 @@ export const updateProfile = async (data, oldusername) => {
 	let ndata = Object.fromEntries(data);
 	// if the username is updated, check if username is avaleble or not
 	if (oldusername !== ndata.username) {
-		let u = await User.findOne({ username: oldusername });
-		if(u){
-			
+		let u = await User.findOne({ username: ndata.username });
+		if (u) {
+			return { error: "Username already exists" };
 		}
+		await User.updateOne({ email: ndata.email }, ndata);
+		await payment.updateMany(
+			{ to_user: oldusername },
+			{ to_user: ndata.username }
+		);
+	} else {
+		await User.updateOne({ email: ndata.email }, ndata);
 	}
 };

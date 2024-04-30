@@ -38,9 +38,9 @@ export const authoptions = NextAuth({
 		async signIn({ user, account, profile, email, credentials }) {
 			if (account.provider == "github") {
 				await connectDB();
-				const currentUser = await User.findOne({ email: email });
+				let currentUser = await User.findOne({ email: user.email });
 				if (!currentUser) {
-					const newUser = await User.create({
+					currentUser = await User.create({
 						email: user.email,
 						username: user.email.split("@")[0],
 					});

@@ -7,6 +7,7 @@ const Login = () => {
 	const { data: session } = useSession();
 	const router = useRouter();
 	useEffect(() => {
+		document.title = "Login - Cup & Companion";
 		if (session) {
 			router.push("/dashboard");
 		}

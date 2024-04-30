@@ -6,17 +6,10 @@ import { useSession, signIn, signOut } from "next-auth/react";
 const Navbar = () => {
 	const { data: session } = useSession();
 	const [showdropdown, setShowdropdown] = useState(false);
-	// if (session) {
-	// 	return (
-	// 		<>
-	// 			Signed in as {session.user.email} <br />
-	// 			<button onClick={() => signOut()}>Sign out</button>
-	// 		</>
-	// 	);
-	// }
+
 	return (
-		<nav className="bg-gray-950 text-white flex justify-between items-center px-8 h-[8vh] ">
-			<Link href="/" className="logo font-bold flex items-center">
+		<nav className="bg-gray-900 text-white flex md:justify-between gap-3 justify-center items-center p-2 md:px-8 md:h-[9vh]   flex-col md:flex-row">
+			<Link href="/" className="logo font-bold flex items-center text-3xl ">
 				Cup & Companion!
 				<span className="flex items-center">
 					<img src="./coffee.gif" width={35} alt="" />
@@ -36,30 +29,33 @@ const Navbar = () => {
 								setShowdropdown(!showdropdown);
 							}}
 							data-dropdown-toggle="dropdownInformation"
-							className="flex py-1 transition-all gap-3 text-white bg-slate-900 hover:bg-slate-800  font-medium rounded-lg text-sm px-2  text-center items-center "
+							className="relative md:h-14 h-10 inline-flex overflow-hidden rounded-lg p-[1px] disabled:ring-0 focus:outline-none focus:ring-2  focus:ring-offset-slate-50 "
 							type="button"
 						>
-							<img
-								className="w-10 rounded-full"
-								src={session.user.image}
-								alt=""
-							/>
-							{session.user.email}
-							<svg
-								className="w-2.5 h-2.5 ms-3"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 10 6"
-							>
-								<path
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="m1 1 4 4 4-4"
+							<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+							<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+								<img
+									className="w-10 rounded-full mr-2 hidden md:block"
+									src={session.user.image}
+									alt=""
 								/>
-							</svg>
+								{session.user.email}
+								<svg
+									className="w-2.5 h-2.5 ms-3"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 10 6"
+								>
+									<path
+										stroke="currentColor"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										d="m1 1 4 4 4-4"
+									/>
+								</svg>
+							</span>
 						</button>
 
 						<div

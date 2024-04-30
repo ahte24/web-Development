@@ -21,6 +21,12 @@ const UserSchema = new Schema({
 	coverpicture: {
 		type: String,
 	},
+	razorpayId: {
+		type: String,
+	},
+	razorpaySecret: {
+		type: String,
+	},
 	createdAt: {
 		type: Date,
 		default: Date.now,
