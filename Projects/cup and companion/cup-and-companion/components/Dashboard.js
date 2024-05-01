@@ -75,8 +75,8 @@ const Dashboard = () => {
 			/>
 			{/* Same as */}
 			<ToastContainer />
-			<div className="h-[83vh] flex flex-col justify-center items-center md:container mx-auto">
-				<h1 className="md:text-3xl text-2xl mt-14 md:mt-0  font-bold text-center">
+			<div className="flex flex-col py-16 justify-center items-center md:container mx-auto">
+				<h1 className="md:text-3xl text-2xl  md:mt-0  font-bold text-center">
 					Welcome to your Dashboard
 				</h1>
 				<form

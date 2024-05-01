@@ -9,7 +9,6 @@ import { Bounce } from "react-toastify";
 import { useRouter } from "next/navigation";
 import { notFound } from "next/navigation";
 
-
 const PaymentPage = ({ username }) => {
 	const searchParams = useSearchParams();
 	const router = useRouter();
@@ -82,7 +81,6 @@ const PaymentPage = ({ username }) => {
 		rzp1.open();
 	};
 
-
 	return (
 		<>
 			<ToastContainer
@@ -101,33 +99,29 @@ const PaymentPage = ({ username }) => {
 			<ToastContainer />
 			<Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
 
-			<div className="cover w-full h-96 relative">
+			<div className="cover w-full md:h-96 relative h-48">
 				<img
-					className="w-full h-96 object-cover "
+					className="w-full object-cover md:h-96  h-48"
 					src={currentUser.coverpicture}
 				/>
-				<div className="flex justify-center  absolute left-[45.5%] border-2 rounded-full border-slate-400 -bottom-20">
-					<img
-						src={currentUser.profilepic}
-						width={150}
-						height={150}
-						className=" rounded-full"
-						alt=""
-					/>
+				<div className="absolute left-1/2 md:bottom-[-180px] bottom-[-116px] transform -translate-x-1/2 -translate-y-1/2">
+					<div className="border-2 rounded-full md:w-44 w-28 border-slate-400">
+						<img src={currentUser.profilepic} className="rounded-full" alt="" />
+					</div>
 				</div>
 			</div>
-			<div className="info flex-col flex justify-center items-center mt-28 ">
+			<div className="info flex-col flex justify-center items-center mt-28 gap-3 ">
 				<div className="font-semibold text-lg">@{username}</div>
-				<div className="text-gray-400 text-sm">
+				<div className="text-gray-400 text-sm w-[80%] text-center">
 					Join Us for a Sip of Innovation: Let's Create Together Over Coffee!
 				</div>
-				<div className="text-gray-400 text-sm">
+				<div className="text-gray-400 text-sm text-center w-[80%]">
 					The community has contributed ₹
 					{payments.reduce((a, b) => a + b.amount, 0)} through {payments.length}{" "}
 					payments.
 				</div>
-				<div className="payments flex p-10 w-[80%] mx-auto gap-10 justify-center">
-					<div className="contributers bg-slate-900 rounded-lg p-4 flex flex-col  w-1/2 min-h-72">
+				<div className="payments  flex-col lg:flex-row flex p-10 2xl:w-[80%] mx-auto gap-10 justify-center">
+					<div className="contributers bg-slate-900 rounded-lg p-4 flex flex-col  lg:w-1/2 min-h-72">
 						<h2 className=" text-center font-bold text-lg mb-4">
 							Top 10 Contributor's
 						</h2>
@@ -140,11 +134,11 @@ const PaymentPage = ({ username }) => {
 							{payments.map((p, i) => {
 								return (
 									<li
-										key={p.message}
+										key={p._id}
 										className="flex items-center my2 gap-3 border border-slate-600 p-2 rounded-lg"
 									>
 										<img width={20} src="./avatar.gif" alt="" />
-										<span>
+										<span className="md:text-md">
 											{p.name} donated{" "}
 											<span className="font-bold">₹{p.amount}</span> with a
 											message "{p.message}"
@@ -154,7 +148,7 @@ const PaymentPage = ({ username }) => {
 							})}
 						</ul>
 					</div>
-					<div className="makePayments bg-slate-900 rounded-lg p-4 flex flex-col  w-1/2 min-h-72">
+					<div className="makePayments bg-slate-900 rounded-lg p-4 flex flex-col  lg:w-1/2 min-h-72">
 						<h2 className=" text-center font-bold text-lg mb-4">
 							Make Payments
 						</h2>

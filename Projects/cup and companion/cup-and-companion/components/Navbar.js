@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [showdropdown, setShowdropdown] = useState(false);
 
 	return (
-		<nav className="bg-gray-900 text-white flex md:justify-between gap-3 justify-center items-center p-2 md:px-8 md:h-[9vh]   flex-col md:flex-row">
+		<nav className="bg-gray-900 text-white flex md:justify-between gap-3 justify-center items-center p-2 md:px-8 lg:h-[8vh]   flex-col md:flex-row">
 			<Link href="/" className="logo font-bold flex items-center text-3xl ">
 				Cup & Companion!
 				<span className="flex items-center">
@@ -29,13 +29,13 @@ const Navbar = () => {
 								setShowdropdown(!showdropdown);
 							}}
 							data-dropdown-toggle="dropdownInformation"
-							className="relative md:h-14 h-10 inline-flex overflow-hidden rounded-lg p-[1px] disabled:ring-0 focus:outline-none focus:ring-2  focus:ring-offset-slate-50 "
+							className="relative lg:h-[55px] h-10 inline-flex overflow-hidden rounded-lg p-[1px] disabled:ring-0 focus:outline-none focus:ring-2  focus:ring-offset-slate-50 "
 							type="button"
 						>
 							<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 							<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 								<img
-									className="w-10 rounded-full mr-2 hidden md:block"
+									className=" lg:w-10 w-8 rounded-full mr-2 hidden md:block"
 									src={session.user.image}
 									alt=""
 								/>
